@@ -20,4 +20,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.mdi:before {
+  color: #23232f;
+}
+</style>
