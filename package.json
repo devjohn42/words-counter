@@ -1,0 +1,28 @@
+{
+  "name": "words-counter",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "author": {
+    "name": "Joao Vitor",
+    "email": "devjohn@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.47",
+    "vuetify": "^3.3.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "electron": "^25.2.0",
+    "electron-builder": "^24.4.0",
+    "vite": "^4.3.9"
+  }
+}
