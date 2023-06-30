@@ -25,6 +25,7 @@
 
 <script>
 import Boll from "./Boll.vue";
+// import { ipcRenderer } from "electron";
 export default {
   components: {
     Boll,
@@ -41,6 +42,10 @@ export default {
   },
   methods: {
     filterSubtitles() {
+      // ipcRenderer.send("teste", "ping2");
+      // ipcRenderer.on("teste", (event, datas) => {
+      //   console.log(datas)
+      // })
       console.log(this.files);
     },
   },
