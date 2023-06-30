@@ -1,10 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require("electron");
-
-const handleSetTitle = (event, title) => {
-  const webContents = event.sender;
-  const win = BrowserWindow.fromWebContents(webContents);
-  win.setTitle(title);
-};
+const { app, BrowserWindow } = require("electron");
 
 const createWindow = () => {
   const window = new BrowserWindow({
@@ -16,7 +10,6 @@ const createWindow = () => {
 };
 
 app.whenReady().then(() => {
-  ipcMain.on("set-title", handleSetTitle);
   createWindow();
 
   app.on("activate", () => {
